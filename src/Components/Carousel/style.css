@@ -1,0 +1,5 @@
+.my-image-size{
+    
+    height: 100vh;
+    object-fit: cover;
+}
