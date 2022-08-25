@@ -3,9 +3,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import SpacCat from "./Img/Space-Cat.png";
 import "./news.css";
-import { list } from "postcss";
-import { Buffer } from "buffer";
-import axios from "axios";
 
 // what to do next
 // deply app to heroku
