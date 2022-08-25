@@ -4,9 +4,9 @@ function Breadcrumb() {
     <div className="my-nav-bar">
       <div className="routes-bar">
         <a href="/">The Band {" | "}</a>
-        <a href="/Signup">Sign Up {" | "}</a>
-        <a href="/">Tour {" | "}</a>
-        <a href="/">Whats Happening </a>
+        {/* <a href="/Signup">Sign Up {" | "}</a> */}
+        <a href="/" ><span  className="text-decoration-line-through"> Tour</span> {" | "}</a>
+        <a href="/news">All News</a>
         <div style={{"float": "right", "margin-right": "100px"}}>
           <a href="https://cryptic-hollows-68550.herokuapp.com/" target={"blank"} >Admin Login</a>
         </div>

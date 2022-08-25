@@ -17,16 +17,16 @@ function CarouselHeader() {
         <Carousel.Caption>
           <h3>Music Sweet Music</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <NavLink to="/SignUp">
+          <a href="#news">
             <Button
               className="px-5 "
               type=""
               variant="success"
               onClick={console.log("YEs")}
             >
-              Sign Up
+             Whats New <span style={{"fontSize": "20px"}}> 	&#11167; </span>
             </Button>
-          </NavLink>
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -42,15 +42,16 @@ function CarouselHeader() {
         <Carousel.Caption>
           <h3>Country Bumpkin</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <NavLink to="/SignUp">
+          <a href="#news">
             <Button
               className="px-5 "
+              type=""
               variant="success"
               onClick={console.log("YEs")}
             >
-              Sign Up
+             Whats New <span style={{"fontSize": "20px"}}> 	&#11167; </span>
             </Button>
-          </NavLink>
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -64,15 +65,16 @@ function CarouselHeader() {
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
-          <NavLink to="/SignUp">
+          <a href="#news">
             <Button
               className="px-5 "
+              type=""
               variant="success"
               onClick={console.log("YEs")}
             >
-              Sign Up
+             Whats New <span style={{"fontSize": "20px"}}> 	&#11167; </span>
             </Button>
-          </NavLink>
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
