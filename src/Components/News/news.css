@@ -1,10 +1,8 @@
 .backing-thing {
   background-color: rgb(212, 212, 212) !important;
-  background-image: url(./Img/space-911785.jpg);
+  background-image: url(./Img/Cosmos.jpg);
   background-repeat: none;
-background-attachment: fixed;
-
-
+  background-attachment: fixed;
 }
 .Card-Style {
   width: 35%;
@@ -16,11 +14,22 @@ background-attachment: fixed;
 .image-size {
   background: black;
   border-radius: 5px;
-   height: 200px;
-  object-fit:contain;
+  height: 200px;
+  object-fit: contain;
 }
 .my-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.my-butt {
+  margin: 3em 0;
+  background: #198754;
+  border: none;
+}
+.News-Headding {
+  padding: 2em 1em 1em;
+  color: white;
+  font-size: 3em;
+  text-decoration: underline;
 }

@@ -1,0 +1,17 @@
+.Content-Container {
+  display: flex;
+}
+.Img {
+  margin: 1em 2em;
+  border: outset rgb(38, 38, 38) 20px;
+  animation: alternate-reverse;
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: calc(50% - 3em);  
+}
+#about{
+  padding: 1em;
+  font-size: 3em;
+  color: black;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "../Carousel/index.js";
-import About from "../About/index.js";
+import About from "../About/About.js";
 import Breadcrumbs from "../Breadcrumbs/index.js";
 import News from "../News/News";
 

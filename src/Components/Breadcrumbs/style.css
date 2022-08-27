@@ -18,12 +18,13 @@
 .my-inner-nav-bar{
   font-size: 1.2em;
    width: 20%;
-   color: rgb(0, 0, 0);
-   background-color: rgba(242, 130, 130, 0.824);
+   color: rgb(255, 255, 255);
+   background-color: rgba(54,12,69, 0.824);
    border-radius: 20%;
    box-shadow: 4px 4px 1px 1px rgba(55, 55, 55, 0.488);
 }
 .my-inner-nav-bar a{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 242, 242);
     text-decoration: none; 
 }
+
