@@ -1,15 +1,15 @@
 import React from "react";
 import Carousel from "../Carousel/index.js";
 import About from "../About/About.js";
-import Breadcrumbs from "../Breadcrumbs/index.js";
+import Nav from "../Nav/index.js";
 import News from "../News/News";
 
-const Home = () => {
+const Home = ({getIndex}) => {
   return (
     <div>
-      <Breadcrumbs />
+      <Nav />
       <Carousel />
-      <News articlesDisplayed={4} />
+      <News articlesDisplayed={4} getIndex={getIndex}  />
       <About />
     </div>
   );

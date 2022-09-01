@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import SpacCat from "./Img/Space-Cat.png";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import NewsIndividual from "./News-Individual/News-Individual";
-import "./news.css";
-
+import SpacCat from "../Img/Space-Cat.png";
+import "../news.css";
 class News extends Component {
   constructor(props) {
     super(props);
@@ -53,18 +50,16 @@ class News extends Component {
       return (
         <article className="backing-thing" id="news" data-anchor>
           <div className="">
-            <h2 className="text-center News-Headding ">Band News</h2>
             <div className="my-flex">
               <div>
                 {this.state.list.length > 0 &&
                   this.state.list
-                    .filter(
-                      (x, index) =>
-                        index < this.props.articlesDisplayed ||
-                        this.props.articlesDisplayed === null
-                    )
+                    .filter((x, index) => index === this.props.articlesIndex)
                     .map((element, index, array) => (
                       <div key={index} className="Card-Style">
+                        <h2 className="text-center News-Headding ">
+                          {element.post_title}
+                        </h2>
                         <div>
                           <Card className="card-size">
                             <img
@@ -78,31 +73,13 @@ class News extends Component {
                               <Card.Text>
                                 Post Date {element.post_date.substring(0, 10)}
                               </Card.Text>
-                              <Card.Text>
-                                {element.post_info.substring(0, 100)}. . .
-                              </Card.Text>
-                              <Link to="/NewsIndividual">
-                                <Button
-                                  variant="primary"
-                                  onClick={() => {
-                                    console.log(index);
-                                    this.props.getIndex(index);
-                                  }}
-                                >
-                                  Read More &gt;
-                                </Button>
-                              </Link>
+                              <Card.Text>{element.post_info}</Card.Text>
                             </Card.Body>
                           </Card>
                         </div>
                       </div>
                     ))}
               </div>
-            </div>
-            <div>
-              <Button href="/news" variant="success" className="my-butt">
-                All News &gt;
-              </Button>
             </div>
           </div>
         </article>
