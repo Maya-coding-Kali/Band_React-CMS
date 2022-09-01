@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
 import SpacCat from "../Img/Space-Cat.png";
-import "./News-Individual.css";
+import "../news.css";
 class News extends Component {
   constructor(props) {
     super(props);
@@ -47,7 +47,7 @@ class News extends Component {
   render() {
     if (this.state.list.length > 0) {
       return (
-        <article className="backing-thing" id="news" data-anchor>
+        <article className="backing-thing" style={{height:"100vh"}} id="news" data-anchor>
           <div className="">
             <div className="my-flex">
               <div>
