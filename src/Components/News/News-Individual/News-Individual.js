@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import SpacCat from "../Img/Space-Cat.png";
 import "../news.css";
@@ -89,7 +88,7 @@ class News extends Component {
         <div className=" my-flex backing-thing" style={{ height: "100vh" }}>
           <div>
             <h3 style={{ color: "white" }} className="text-center">
-              Comming Soon
+              Coming Soon
             </h3>
             <div style={{ width: "100%" }}>
               <img src={SpacCat} alt="SpaceCat" style={{ height: "25%" }} />

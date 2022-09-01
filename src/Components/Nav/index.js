@@ -1,18 +1,13 @@
-import { useState, useEffect, useRef } from "react";
-import { HashRouter, useNavigate, useLocation } from "react-router-dom";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
+import { useState} from "react";
+
 import "./style.css";
 function Breadcrumbs() {
   const [isActive, setIsActive] = useState("home");
-  const [offset, setOffset] = useState(0); 
   return (
     <div className="my-nav-bar">
       <div className="routes-bar">
         <a href="/">The Band {" | "}</a>
-        {/* <a href="/Signup">Sign Up {" | "}</a> */}
-        <a href="/">
-          <span className="text-decoration-line-through "> Tour</span> {" | "}
-        </a>
+        {/* <a href="/Signup">Sign Up {" | "}</a> */}       
         <a href="/news">All News</a>
         <div style={{ float: "right", marginRight: "100px" }}>
           <a

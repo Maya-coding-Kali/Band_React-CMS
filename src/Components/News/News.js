@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import SpacCat from "./Img/Space-Cat.png";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import NewsIndividual from "./News-Individual/News-Individual";
+import {  Link } from "react-router-dom";
 import "./news.css";
 
 class News extends Component {
