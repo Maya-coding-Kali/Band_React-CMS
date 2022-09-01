@@ -20,7 +20,9 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/NewsIndividual" element={<NewIndividual articlesIndex={articleIndex} />} />
           </Route>
+           <Route element={<Layout />}>
           <Route path="/News" element={<News articlesDisplayed={null} getIndex={getIndex} />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
