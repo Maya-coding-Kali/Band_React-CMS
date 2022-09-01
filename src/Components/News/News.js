@@ -3,11 +3,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import SpacCat from "./Img/Space-Cat.png";
 import "./news.css";
-
-// what to do next
-// deply app to heroku
-// list skills used
-//
 class News extends Component {
   constructor(props) {
     super(props);
@@ -38,7 +33,7 @@ class News extends Component {
       .then((response) => response.json())
       .then(this.buildList)
       .catch((err) => {
-        console.log("error posting" + err);
+        console.log("error posting " + err);
       });
   }
   componentWillUnmount() {
@@ -53,46 +48,48 @@ class News extends Component {
   render() {
     if (this.state.list.length > 0) {
       return (
-        <article className="backing-thing" id="news">
+        <article className="backing-thing" id="news" data-anchor>
           <div className="">
-          <h2 className="text-center News-Headding ">Band News</h2>
+            <h2 className="text-center News-Headding ">Band News</h2>
             <div className="my-flex">
-              {this.state.list.length > 0 &&
-                this.state.list
-                  .filter(
-                    (x, index) =>
-                      index < this.props.articlesDisplayed ||
-                      this.props.articlesDisplayed === null
-                  )
-                  .map((element, index, array) => (
-                    <div key={index} className="Card-Style">
-                      <div>
-                        <Card className="card-size">
-                          <img
-                            className="image-size"
-                            variant="top"
-                            src={element.post_image}
-                            alt="name"
-                          />
-                          <Card.Body>
-                            <Card.Title>{element.post_title}</Card.Title>
-                            <Card.Text>
-                              Post Date {element.post_date.substring(0, 10)}
-                            </Card.Text>
-                            <Card.Text>
-                              {element.post_info.substring(0, 100)}. . .
-                            </Card.Text>
-                            <Button href="/news" variant="primary">
-                              Read More &gt;
-                            </Button>
-                          </Card.Body>
-                        </Card>
+              <div>
+                {this.state.list.length > 0 &&
+                  this.state.list
+                    .filter(
+                      (x, index) =>
+                        index < this.props.articlesDisplayed ||
+                        this.props.articlesDisplayed === null
+                    )
+                    .map((element, index, array) => (
+                      <div key={index} className="Card-Style">
+                        <div>
+                          <Card className="card-size">
+                            <img
+                              className="image-size"
+                              variant="top"
+                              src={element.post_image}
+                              alt="name"
+                            />
+                            <Card.Body>
+                              <Card.Title>{element.post_title}</Card.Title>
+                              <Card.Text>
+                                Post Date {element.post_date.substring(0, 10)}
+                              </Card.Text>
+                              <Card.Text>
+                                {element.post_info.substring(0, 100)}. . .
+                              </Card.Text>
+                              <Button href="/news" variant="primary">
+                                Read More &gt;
+                              </Button>
+                            </Card.Body>
+                          </Card>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+              </div>
             </div>
             <div>
-              <Button href="/news" variant="success"  className="my-butt">
+              <Button href="/news" variant="success" className="my-butt">
                 All News &gt;
               </Button>
             </div>
@@ -101,8 +98,8 @@ class News extends Component {
       );
     } else {
       return (
-       
-          <div className=" my-flex backing-thing" style={{ height: "100vh" }}>
+        <div className=" my-flex backing-thing" style={{ height: "100vh" }}>
+          <div>
             <h3 style={{ color: "white" }} className="text-center">
               Comming Soon
             </h3>
@@ -110,6 +107,7 @@ class News extends Component {
               <img src={SpacCat} alt="SpaceCat" style={{ height: "25%" }} />
             </div>
           </div>
+        </div>
       );
     }
   }

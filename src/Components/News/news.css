@@ -17,7 +17,10 @@
   height: 200px;
   object-fit: contain;
 }
-.my-flex {
+.my-flex{
+ width: 100%;
+}
+.my-flex > div:first-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -32,4 +35,17 @@
   color: white;
   font-size: 3em;
   text-decoration: underline;
+}
+@media (max-width: 861px){
+  .my-flex > div:first-child{
+    flex-direction: column;    
+    width: 100%;
+    margin: auto;
+  }
+  .Card-Style {
+    width: 85%;
+    align-items: center;
+    margin: auto;
+    margin-top: 2em;
+  }
 }

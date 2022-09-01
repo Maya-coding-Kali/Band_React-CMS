@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Breadcrumbs />
       <Carousel />
-      <News articlesDisplayed={4} sizeOfImages={20} heightOfImages={10}/>
+      <News articlesDisplayed={4} />
       <About />
     </div>
   );

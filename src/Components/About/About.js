@@ -19,22 +19,22 @@ function About() {
       </div>
       <div
         className="Content-Container  shadow-sm"
-        onScroll={
-          window.addEventListener("scroll", (event) => {
-            console.log();
-            if (firstScroll === 0) {
-            
-              document.querySelector(".Content-Container").style.transition = `opacity 5s`;
-            }
-            setfirstScroll(1);
-          ;
+        onScroll={window.addEventListener("scroll", (event) => {
+          if (firstScroll === 0) {
+            document.querySelector(
+              ".Content-Container"
+            ).style.transition = `opacity 5s`;
+          }
+          setfirstScroll(1);
         })}
       >
-        <div
-          className=" Img"
-          style={{ backgroundImage: `url(${Steve})` }}
-        ></div>
-        <div className=" text-center w-50 ">
+        <div className="image-holder">
+          <div
+            className=" Img"
+            style={{ backgroundImage: `url(${Steve})` }}
+          ></div>
+        </div>
+        <div className=" text-center text-width">
           <p className="p-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. A erat
@@ -62,11 +62,13 @@ function About() {
         className="Content-Container shadow-sm"
         style={{ flexDirection: "row-reverse" }}
       >
-        <div
-          className=" Img"
-          style={{ backgroundImage: `url(${Erica})` }}
-        ></div>
-        <div className="p-0 text-center w-50 ">
+        <div className="image-holder">
+          <div
+            className="Img"
+            style={{ backgroundImage: `url(${Erica})` }}
+          ></div>
+        </div>
+        <div className="p-0 text-center text-width ">
           <p className="p-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. A erat
@@ -92,8 +94,13 @@ function About() {
         </div>
       </div>
       <div className="Content-Container shadow-sm">
-        <div className=" Img" style={{ backgroundImage: `url(${Jake})` }}></div>
-        <div className=" text-center w-50 ">
+        <div className="image-holder">
+          <div
+            className=" Img"
+            style={{ backgroundImage: `url(${Jake})` }}
+          ></div>
+        </div>
+        <div className=" text-center text-width ">
           <p className="p-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. A erat
@@ -121,11 +128,13 @@ function About() {
         className="Content-Container shadow-sm"
         style={{ flexDirection: "row-reverse" }}
       >
+       <div className="image-holder">
         <div
           className=" Img"
           style={{ backgroundImage: `url(${Alice})` }}
         ></div>
-        <div className="p-0 text-center w-50 ">
+        </div>
+        <div className="p-0 text-center text-width ">
           <p className="p-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. A erat

@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import "./style.css";
 function CarouselHeader() {
   return (
-    <Carousel id="home">
+    <Carousel id="home" onScroll={() => {}}>
       <Carousel.Item className="overlay ">
         <img
           className="d-block w-100 my-image-size"
@@ -18,13 +18,8 @@ function CarouselHeader() {
           <h3>Music Sweet Music</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           <a href="#news">
-            <Button
-              className="px-5 "
-              type=""
-              variant="success"
-              onClick={console.log("YEs")}
-            >
-             Whats New <span style={{"fontSize": "20px"}}> 	&#11167; </span>
+            <Button className="px-5 " type="" variant="success">
+              Whats New <span style={{ fontSize: "20px" }}> &#11167; </span>
             </Button>
           </a>
         </Carousel.Caption>
@@ -43,13 +38,8 @@ function CarouselHeader() {
           <h3>Country Bumpkin</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <a href="#news">
-            <Button
-              className="px-5 "
-              type=""
-              variant="success"
-              onClick={console.log("YEs")}
-            >
-             Whats New <span style={{"fontSize": "20px"}}> 	&#11167; </span>
+            <Button className="px-5 " type="" variant="success">
+              Whats New <span style={{ fontSize: "20px" }}> &#11167; </span>
             </Button>
           </a>
         </Carousel.Caption>
@@ -66,13 +56,8 @@ function CarouselHeader() {
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
           <a href="#news">
-            <Button
-              className="px-5 "
-              type=""
-              variant="success"
-              onClick={console.log("YEs")}
-            >
-             Whats New <span style={{"fontSize": "20px"}}> 	&#11167; </span>
+            <Button className="px-5 " type="" variant="success">
+              Whats New <span style={{ fontSize: "20px" }}> &#11167; </span>
             </Button>
           </a>
         </Carousel.Caption>
