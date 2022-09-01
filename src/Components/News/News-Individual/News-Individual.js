@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
 import SpacCat from "../Img/Space-Cat.png";
-import "../news.css";
+import "./News-Individual.css";
 class News extends Component {
   constructor(props) {
     super(props);

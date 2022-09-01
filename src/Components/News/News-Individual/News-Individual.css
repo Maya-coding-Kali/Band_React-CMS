@@ -1,9 +1,9 @@
 .backing-thing {
   background-color: rgb(212, 212, 212) !important;
-  background-image: url(./Img/Cosmos.jpg);
-  background-repeat: none;
-  background-attachment: fixed;
+  background-image: url(../Img/Cosmos.jpg);
   
+  background-attachment: fixed;
+  height: 100vh;
 }
 .Card-Style {
   width: 35%;
